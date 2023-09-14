@@ -1,4 +1,8 @@
-const mockEmployees = [
+import Navbar from "./Navbar"
+import { Link } from "react-router-dom"
+import ButtonClick from "./ButtonClick"
+
+export const  mockEmployees = [
   {
     id: 0,
     name: "mock",
@@ -21,10 +25,16 @@ const mockEmployees = [
 
 const Home = () => {
 
-  return (
-    <div>
 
-    </div>
+  return (
+    <>
+      <Navbar/>
+      <div className="card">
+        <h2 className="title" >Generation Thailand</h2>
+        <h2 className="title">React-Accessment</h2>
+        <ButtonClick/>
+      </div>
+    </>
   )
 }
 
